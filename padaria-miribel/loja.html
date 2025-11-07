@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria Miribel - Loja Virtual</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/loja.css">
+</head>
+
+<body>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-button-container">
+        <div class="baker-hat-icon">
+            <div class="hat-top"></div>
+            <div class="hat-base"></div>
+        </div>
+    </label>
+    <div class="overlay"></div>
+
+    <header id="hero">
+        <img src="./images/ambiente/entrada-padaria-miribel.png"
+            alt="Entrada da Padaria Miribel com iluminação aconchegante" class="hero-background-image"
+            fetchpriority="high">
+        <div class="hero-badge">Pão quentinho a toda hora!</div>
+        <div class="hero-content">
+            <picture>
+                <source media="(min-width: 900px)" srcset="./images/logo/logo-padaria-miribel.png">
+                <source media="(min-width: 600px)" srcset="./images/logo/logo-padaria-miribel.png">
+                <img src="./images/logo/logo-padaria-miribel.png" alt="Logo da Padaria Miribel." width="190"
+                    height="190">
+            </picture>
+            <h1>Nossa Loja</h1>
+            <h2>Produtos artesanais, feitos com carinho.</h2>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <a href="./index.html" target="_parent">Home</a>
+        <a href="contato.html" target="_parent">Contato</a>
+        <a href="pedidos.html" target="_parent">Pedidos</a>
+        <a href="feedback.html" target="_parent">Feedback</a>
+        <a href="cadastro.html" target="_parent">Cadastro</a>
+    </nav>
+
+    <main>
+        <div class="loja-container">
+            <div>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Buscar por nome...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="product-grid">
+
+                <!-- Produto 1: Pão Francês -->
+            <div class="product-card" data-product-id="1">
+                <img src="./images/produtos/pão-francês.png" alt="Pão Francês">
+                <h3>Pão Francês</h3>
+                <p class="price">R$ 1,00</p>
+                <div class="details">
+                    <p>Crocante por fora, macio por dentro. Perfeito para o seu café da manhã.</p>
+                </div>
+                <div class="quantity-control">
+                    <button class="quantity-btn decrease">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1" readonly>
+                    <button class="quantity-btn increase">+</button>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 2: Pão de Queijo -->
+            <div class="product-card" data-product-id="2">
+                <img src="./images/produtos/pão-de-queijo.png" alt="Pão de Queijo">
+                <h3>Pão de Queijo</h3>
+                <p class="price">R$ 3,50</p>
+                <div class="details">
+                    <p>A receita tradicional mineira, com queijo de verdade e muito sabor.</p>
+                </div>
+                <div class="quantity-control">
+                    <button class="quantity-btn decrease">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1" readonly>
+                    <button class="quantity-btn increase">+</button>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 3: Bolo de Cenoura -->
+            <div class="product-card" data-product-id="3">
+                <img src="./images/produtos/bolo-de-cenoura.png" alt="Bolo de Cenoura">
+                <h3>Bolo de Cenoura</h3>
+                <p class="price">R$ 25,00</p>
+                <div class="details">
+                    <p>Fofinho e com uma generosa cobertura de chocolate. O lanche perfeito.</p>
+                </div>
+                <div class="quantity-control">
+                    <button class="quantity-btn decrease">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1" readonly>
+                    <button class="quantity-btn increase">+</button>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 4: Torta de Limão -->
+            <div class="product-card" data-product-id="4">
+                <img src="./images/produtos/torta-de-limão.png" alt="Torta de Limão">
+                <h3>Torta de Limão</h3>
+                <p class="price">R$ 35,00</p>
+                <div class="details">
+                    <p>Massa crocante, creme de limão azedinho e um merengue suave por cima.</p>
+                </div>
+                <div class="quantity-control">
+                    <button class="quantity-btn decrease">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1" readonly>
+                    <button class="quantity-btn increase">+</button>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 5: Café Expresso -->
+            <div class="product-card" data-product-id="5">
+                <img src="./images/produtos/café-expresso.png" alt="Café Expresso">
+                <h3>Café Expresso</h3>
+                <p class="price">R$ 5,00</p>
+                <div class="details">
+                    <p>Grãos selecionados e moídos na hora para um café forte e aromático.</p>
+                </div>
+                <div class="quantity-control">
+                    <button class="quantity-btn decrease">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1" readonly>
+                    <button class="quantity-btn increase">+</button>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 6: Suco de Laranja -->
+            <div class="product-card" data-product-id="6">
+                <img src="./images/produtos/bebida-suco-de-laranja.png" alt="Suco de Laranja">
+                <h3>Suco de Laranja</h3>
+                <p class="price">R$ 8,00</p>
+                <div class="details">
+                    <p>Natural, feito com laranjas frescas e espremidas na hora. Pura vitamina C.</p>
+                </div>
+                <div class="quantity-control">
+                    <button class="quantity-btn decrease">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1" readonly>
+                    <button class="quantity-btn increase">+</button>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 7: Pão de Milho -->
+            <div class="product-card" data-product-id="7">
+                <img src="./images/produtos/pão-de-milho.png" alt="Pão de Milho">
+                <h3>Pão de Milho</h3>
+                <p class="price">R$ 12,00</p>
+                <div class="details">
+                    <p>Um pão macio e levemente adocicado, perfeito com manteiga.</p>
+                </div>
+                <div class="quantity-control">
+                    <button class="quantity-btn decrease">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1" readonly>
+                    <button class="quantity-btn increase">+</button>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 8: Torta Holandesa -->
+            <div class="product-card" data-product-id="8">
+                <img src="./images/produtos/torta-holandesa.png" alt="Torta Holandesa">
+                <h3>Torta Holandesa</h3>
+                <p class="price">R$ 45,00</p>
+                <div class="details">
+                    <p>Base de biscoito, creme holandês e cobertura de ganache de chocolate.</p>
+                </div>
+                <div class="quantity-control">
+                    <button class="quantity-btn decrease">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1" readonly>
+                    <button class="quantity-btn increase">+</button>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 9: Bolo de Fubá com Goiabada -->
+            <div class="product-card" data-product-id="9">
+                <img src="./images/produtos/bolo-de-fubá-com-goiabada.png" alt="Bolo de Fubá com Goiabada">
+                <h3>Bolo de Fubá c/ Goiabada</h3>
+                <p class="price">R$ 28,00</p>
+                <div class="details">
+                    <p>A combinação perfeita do campo, com a doçura da goiabada cascão.</p>
+                </div>
+                <div class="quantity-control">
+                    <button class="quantity-btn decrease">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1" readonly>
+                    <button class="quantity-btn increase">+</button>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 10: Pão Ciabatta -->
+            <div class="product-card" data-product-id="10">
+                <img src="./images/produtos/pão-ciabatta.png" alt="Pão Ciabatta">
+                <h3>Pão Ciabatta</h3>
+                <p class="price">R$ 6,00</p>
+                <div class="details">
+                    <p>Pão italiano de fermentação natural, ideal para sanduíches gourmet.</p>
+                </div>
+                <div class="quantity-control">
+                    <button class="quantity-btn decrease">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1" readonly>
+                    <button class="quantity-btn increase">+</button>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 11: Café Capuccino -->
+            <div class="product-card" data-product-id="11">
+                <img src="./images/produtos/café-capuccino.png" alt="Café Capuccino">
+                <h3>Café Capuccino</h3>
+                <p class="price">R$ 9,00</p>
+                <div class="details">
+                    <p>Espresso, leite vaporizado e espuma de leite cremosa, polvilhado com chocolate.</p>
+                </div>
+                <div class="quantity-control">
+                    <button class="quantity-btn decrease">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1" readonly>
+                    <button class="quantity-btn increase">+</button>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 12: Chocolate Quente -->
+            <div class="product-card" data-product-id="12">
+                <img src="./images/produtos/bebida-chocolate-quente.png" alt="Chocolate Quente">
+                <h3>Chocolate Quente</h3>
+                <p class="price">R$ 12,00</p>
+                <div class="details">
+                    <p>Cremoso e aveludado, feito com chocolate nobre. Um abraço em forma de bebida.</p>
+                </div>
+                <div class="quantity-control">
+                    <button class="quantity-btn decrease">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1" readonly>
+                    <button class="quantity-btn increase">+</button>
+                </div>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+
+            </div>
+            </div>
+
+            <aside class="cart-summary">
+                <h2>Carrinho de Compras</h2>
+                <ul id="cart-items">
+                    <!-- Itens do carrinho serão adicionados aqui via JavaScript -->
+                    <li class="cart-empty-message">Seu carrinho está vazio.</li>
+                </ul>
+                <div class="cart-total">
+                    <p>Total: <span id="total-price">R$ 0,00</span></p>
+                </div>
+                <button id="clear-cart-btn">Limpar Carrinho</button>
+
+                <!-- Início do Formulário de Checkout -->
+                <div class="checkout-container">
+                    <h2 style="margin-top: 2rem; border-top: 1px solid #e0d8cd; padding-top: 1.5rem;">Finalizar
+                        Compra</h2>
+                    <form id="checkout-form" novalidate>
+                        <div class="form-group">
+                            <label for="checkout-email">E-mail</label>
+                            <input type="email" id="checkout-email" placeholder="seu@email.com" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout-password">Crie uma Senha</label>
+                            <input type="password" id="checkout-password" placeholder="Mínimo 8 caracteres" required>
+                            <div id="password-strength-meter">
+                                <div id="password-strength-bar"></div>
+                            </div>
+                            <span id="password-strength-text"></span>
+                        </div>
+                        <button type="submit" id="checkout-btn" disabled>Finalizar Compra</button>
+                    </form>
+                </div>
+                <!-- Fim do Formulário de Checkout -->
+
+            </aside>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h4>Sobre a Padaria Miribel</h4>
+                <p>Desde 1995, oferecendo tradição e sabor que aquecem o coração. Pães, doces e um ambiente familiar
+                    esperam por
+                    você.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Rua Voluntários da Pátria, 235<br>Santana, São Paulo - SP</p>
+                <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                <p><i class="fas fa-envelope"></i> contato@padariamiribel.com.br</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pedidos.html">Pedidos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Siga-nos</h4>
+                <div class="footer-social-icons">
+                    <a href="#" aria-label="Facebook" data-tooltip="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp" data-tooltip="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Padaria Miribel&reg; - Todos os direitos reservados. Desenvolvido com carinho por Mayara
+                Perillo.
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="js/loja.js"></script>
+</body>
+
+</html>

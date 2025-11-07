@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #d9480f;
+    --dark-bg: #2d3748;
+    --light-bg: #f0f2f5;
+    --text-light: #f7fafc;
+    --text-dark: #333;
+    --card-bg: #ffffff;
+    --shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 2rem;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+h1, h2 {
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: 700;
+}
+h1 {
+    font-size: 2.5rem;
+}
+.card {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+}
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+.form-group input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(217, 72, 15, 0.2);
+}
+.main-button {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.main-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(217, 72, 15, 0.3);
+}
+#results-container pre {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'SF Mono', 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}

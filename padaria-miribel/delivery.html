@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Delivery - Funções</title>
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 { color: #d9480f; }
+        pre {
+            background-color: #2d3748;
+            color: #f7fafc;
+            padding: 1rem;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Funções de Delivery</h1>
+        <p>Os resultados da execução das funções JavaScript estão exibidos abaixo e também no console do navegador (F12).</p>
+        <pre id="output"></pre>
+    </div>
+
+    <script>
+        // Objeto para armazenar os resultados que serão exibidos na tela
+        const resultados = {};
+
+        // --- 1. Função de Boas-Vindas 👋 ---
+        function exibirMensagemBoasVindas() {
+            const mensagem = "👋 Bem-vindo(a) ao nosso sistema de delivery! Boas compras.";
+            console.log(mensagem);
+            return mensagem;
+        }
+
+        // --- 2. Função de Cálculo de Subtotal 🛒 ---
+        function calcularSubtotal(preco, quantidade) {
+            return preco * quantidade;
+        }
+
+        // --- 3. Função de Cálculo de Desconto 🎁 ---
+        function calcularDesconto(valor, percentualDesconto) {
+            if (percentualDesconto <= 0) return 0;
+            return valor * (percentualDesconto / 100);
+        }
+
+        // --- 4. Função de Cálculo de Taxa de Entrega 🚚 ---
+        function calcularTaxaEntrega(distanciaKm) {
+            if (distanciaKm <= 5) return 5.00;
+            if (distanciaKm <= 10) return 10.00;
+            if (distanciaKm <= 20) return 15.00;
+            return 25.00; // Para distâncias maiores
+        }
+
+        // --- 5. Função de Cálculo de Imposto 💰 ---
+        function calcularImposto(valor) {
+            const imposto = valor * 0.08; // 8% de imposto
+            console.log(`💰 Imposto de 8% calculado: R$${imposto.toFixed(2)}`);
+            return imposto;
+        }
+
+        // --- 6. Função de Verificação de Frete Grátis 🆓 ---
+        function verificarFreteGratis(valorPedido) {
+            const elegivel = valorPedido > 50.00;
+            console.log(`🆓 Verificando frete grátis para pedido de R$${valorPedido.toFixed(2)}: ${elegivel ? 'Sim' : 'Não'}`);
+            return elegivel;
+        }
+
+        // --- 7. Função que Retorna o Total Final do Pedido 🧾 ---
+        function calcularTotalPedido(subtotal, desconto, imposto, taxa) {
+            return subtotal - desconto + imposto + taxa;
+        }
+
+        // --- SIMULAÇÃO: Executando o fluxo de cálculo de um pedido ---
+        console.log("--- INICIANDO SIMULAÇÃO DE PEDIDO ---");
+
+        resultados.boasVindas = exibirMensagemBoasVindas();
+
+        const subtotalBruto = calcularSubtotal(40.00, 2); // 2 itens de R$40,00
+        resultados.subtotal = `2x R$40.00 = R$${subtotalBruto.toFixed(2)}`;
+
+        const descontoAplicado = calcularDesconto(subtotalBruto, 10); // 10% de desconto
+        resultados.desconto = `Desconto (10%) = -R$${descontoAplicado.toFixed(2)}`;
+        
+        const subtotalComDesconto = subtotalBruto - descontoAplicado;
+        resultados.subtotalComDesconto = `Subtotal com desconto = R$${subtotalComDesconto.toFixed(2)}`;
+
+        const temFreteGratis = verificarFreteGratis(subtotalComDesconto);
+        const taxaEntregaOriginal = calcularTaxaEntrega(7); // Entrega a 7km
+        const taxaEntregaFinal = temFreteGratis ? 0 : taxaEntregaOriginal;
+        resultados.taxaEntrega = `Taxa de entrega para 7km = R$${taxaEntregaFinal.toFixed(2)} (Original: R$${taxaEntregaOriginal.toFixed(2)}, Frete Grátis: ${temFreteGratis})`;
+
+        const impostoCalculado = calcularImposto(subtotalComDesconto);
+        resultados.imposto = `Imposto (8%) = +R$${impostoCalculado.toFixed(2)}`;
+
+        const totalFinal = calcularTotalPedido(subtotalBruto, descontoAplicado, impostoCalculado, taxaEntregaFinal);
+        resultados.TOTAL_FINAL = `R$${totalFinal.toFixed(2)}`;
+
+        // --- Exibindo os resultados na tela ---
+        const outputEl = document.getElementById('output');
+        outputEl.textContent = JSON.stringify(resultados, null, 2);
+
+    </script>
+</body>
+</html>

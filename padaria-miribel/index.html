@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Padaria Miribel - Pães, doces e muito mais. Venha experimentar!">
+  <meta name="keywords" content="padaria, pão, bolo, doces, Miribel, São Paulo">
+  <title>Padaria Miribel - Há 30 anos trabalhando com carinho e dedicação</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+
+<body>
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-button-container">
+    <div class="baker-hat-icon">
+      <div class="hat-top"></div>
+      <div class="hat-base"></div>
+    </div>
+  </label>
+  <div class="overlay"></div>
+
+  <header id="hero">
+    <img src="./images/ambiente/entrada-padaria-miribel.png" alt="Entrada da Padaria Miribel com iluminação aconchegante" class="hero-background-image" fetchpriority="high">
+    <img src="./images/ambiente/entrada-padaria-miribel.png" alt="Entrada da Padaria Miribel com iluminação aconchegante" class="hero-background-image" fetchpriority="high">
+    <div class="hero-badge">Pão quentinho a toda hora!</div>
+    <div class="hero-content">
+      <picture>
+        <source media="(min-width: 900px)" srcset="./images/logo/logo-padaria-miribel.png">
+        <source media="(min-width: 600px)" srcset="./images/logo/logo-padaria-miribel.png">
+        <img src="./images/logo/logo-padaria-miribel.png" alt="Logo da Padaria Miribel." width="190" height="190">
+      </picture>
+      <h1>Padaria Miribel</h1>
+      <h2>Tradição e sabor que aquecem o coração</h2>
+      <a href="#nossos-produtos" class="hero-cta">Conheça nossos produtos</a>
+    </div>
+  </header>
+
+  <nav class="menu">
+    <a href="./index.html" target="_parent">Home</a>
+    <a href="contato.html" target="_parent">Contato</a>
+    <a href="pedidos.html" target="_parent">Pedidos</a>
+    <a href="feedback.html" target="_parent">Feedback</a>
+    <a href="cadastro.html" target="_parent">Cadastro</a>
+  </nav>
+
+  <main>
+    <section id="sobre-nos" class="container">
+      <h2>Sobre nós</h2>
+      <h3>Nossa história</h3>
+      <p>A Padaria Miribel foi fundada em 1995 por Dona Maria e Seu Alberto, um casal apaixonado pela arte de fazer pães
+        e pelo atendimento acolhedor. Desde o início, o foco foi oferecer um ambiente familiar, onde os clientes não só
+        comprassem pães frescos, mas também se sentissem em casa. Com um forno de tijolos e receitas caseiras, a padaria
+        rapidamente conquistou os moradores da cidade, tornando-se um ponto de encontro diário, onde todos se sentiam à
+        vontade para trocar histórias e experiências.</p>
+      <p>Com o tempo, a Miribel foi expandindo seu cardápio, oferecendo bolos, tortas e cafés especiais, sempre mantendo
+        a qualidade e o carinho no preparo de cada produto. Em 2005, a padaria se modernizou, mas sem perder sua
+        essência acolhedora. Hoje, a Miribel é um verdadeiro patrimônio da cidade, passando de geração em geração, e
+        continua a ser sinônimo de sabor, tradição e amizade.</p>
+      <video controls preload="metadata" playsinline autoplay muted loop title="Vídeo de nossa história"
+        poster="./images/poster/nossa-história.jpeg" loading="lazy">
+        <source src="./videos/video-nossa-história.mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+      </video>
+      <h3>Nossa missão</h3>
+      <p>A missão da Padaria Miribel é proporcionar aos seus clientes uma experiência acolhedora e de qualidade,
+        oferecendo produtos frescos e deliciosos, feitos com carinho e dedicação. Seu compromisso é manter viva a
+        tradição de um atendimento personalizado, criando um ambiente familiar onde cada cliente se sinta especial e
+        parte da história da padaria. A Miribel busca não apenas vender pães, mas também promover momentos de
+        convivência e alegria, sempre com ingredientes de qualidade e o sabor de um lar.</p>
+    </section>
+
+    <section id="produtos-destaque" class="container">
+      <h2>Nossos produtos mais amados</h2>
+      <div class="product-cards-container">
+        <div class="product-card">
+          <img src="./images/produtos/pão-de-queijo.png" alt="Pão de Queijo" loading="lazy">
+          <div class="product-card-content">
+            <h4>Pão de Queijo</h4>
+            <p>Aquele sabor de Minas que derrete na boca. Quentinho a toda hora!</p>
+            <a href="pedidos.html" class="btn-comprar">Quero!</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-badge promotion">Promoção</div>
+          <img src="./images/produtos/bolo-de-cenoura.png" alt="Bolo de Cenoura com Chocolate" loading="lazy">
+          <div class="product-card-content">
+            <h4>Bolo de Cenoura</h4>
+            <p>Fofinho, com uma cobertura generosa de chocolate que abraça o bolo.</p>
+            <a href="pedidos.html" class="btn-comprar">Quero!</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./images/produtos/café-capuccino.png" alt="Cappuccino Cremoso" loading="lazy">
+          <div class="product-card-content">
+            <h4>Cappuccino Cremoso</h4>
+            <p>Aquele carinho em forma de café, com a espuma de leite perfeita.</p>
+            <a href="pedidos.html" class="btn-comprar">Quero!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="nossos-produtos" class="container">
+      <h2>Nossos Produtos</h2>
+      <div class="product-tabs-container">
+        <input type="radio" id="tab-paes" name="product-tab" checked>
+        <input type="radio" id="tab-cafes" name="product-tab">
+        <input type="radio" id="tab-bolos" name="product-tab">
+        <input type="radio" id="tab-tortas" name="product-tab">
+
+        <div class="product-tabs">
+          <label for="tab-paes">Pães</label>
+          <label for="tab-cafes">Cafés e Bebidas</label>
+          <label for="tab-bolos">Bolos</label>
+          <label for="tab-tortas">Tortas</label>
+        </div>
+
+        <div class="product-content">
+          <div id="content-paes" class="tab-pane">
+            <div class="product-item">
+              <img src="./images/produtos/pão-francês.png" alt="Pão Francês" loading="lazy">
+              <div class="product-item-content">
+                <h4>Pão Francês</h4>
+                <p>Crocante por fora e macio por dentro, o clássico do café da manhã.</p>
+                <div class="product-actions">
+                  <a href="pedidos.html" class="btn-comprar">Comprar</a>
+                  <a href="#" class="btn-info">Saiba Mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <img src="./images/produtos/pão-de-milho.png" alt="Pão de Milho" loading="lazy">
+              <div class="product-item-content">
+                <h4>Pão de Milho</h4>
+                <p>Sabor suave e levemente adocicado, perfeito com manteiga.</p>
+                <div class="product-actions">
+                  <a href="pedidos.html" class="btn-comprar">Comprar</a>
+                  <a href="#" class="btn-info">Saiba Mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <img src="./images/produtos/pão-de-queijo.png" alt="Pão de Queijo" loading="lazy">
+              <div class="product-item-content">
+                <h4>Pão de Queijo</h4>
+                <p>Tradicional de Minas Gerais, com casca crocante e miolo macio.</p>
+                <div class="product-actions">
+                  <a href="pedidos.html" class="btn-comprar">Comprar</a>
+                  <a href="#" class="btn-info">Saiba Mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-badge new">Novo</div>
+              <img src="./images/produtos/pão-ciabatta.png" alt="Pão de Ciabatta" loading="lazy">
+              <div class="product-item-content">
+                <h4>Pão Ciabatta</h4>
+                <p>Com crosta rústica e miolo aerado, ideal para sanduíches.</p>
+                <div class="product-actions">
+                  <a href="pedidos.html" class="btn-comprar">Comprar</a>
+                  <a href="#" class="btn-info">Saiba Mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="content-cafes" class="tab-pane">
+            <div class="product-item">
+              <img src="./images/produtos/café-expresso.png" alt="Café Expresso" loading="lazy">
+              <div class="product-item-content">
+                <h4>Café Expresso</h4>
+                <p>Intenso e aromático, preparado na hora para despertar os sentidos.</p>
+                <div class="product-actions">
+                  <a href="pedidos.html" class="btn-comprar">Comprar</a>
+                  <a href="#" class="btn-info">Saiba Mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <img src="./images/produtos/café-capuccino.png" alt="Cappuccino" loading="lazy">
+              <div class="product-item-content">
+                <h4>Cappuccino</h4>
+                <p>Cremoso e equilibrado, com o toque aveludado do leite vaporizado.</p>
+                <div class="product-actions">
+                  <a href="pedidos.html" class="btn-comprar">Comprar</a>
+                  <a href="#" class="btn-info">Saiba Mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <img src="./images/produtos/bebida-chocolate-quente.png" alt="Chocolate Quente" loading="lazy">
+              <div class="product-item-content">
+                <h4>Chocolate Quente</h4>
+                <p>Cremoso e reconfortante, feito com o melhor chocolate.</p>
+                <div class="product-actions">
+                  <a href="pedidos.html" class="btn-comprar">Comprar</a>
+                  <a href="#" class="btn-info">Saiba Mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <img src="./images/produtos/bebida-suco-de-laranja.png" alt="Suco Natural de Laranja" loading="lazy">
+              <div class="product-item-content">
+                <h4>Suco Natural de Laranja</h4>
+                <p>Refrescante e cheio de vitamina C, feito com laranjas frescas.</p>
+                <div class="product-actions">
+                  <a href="pedidos.html" class="btn-comprar">Comprar</a>
+                  <a href="#" class="btn-info">Saiba Mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="content-bolos" class="tab-pane">
+            <div class="product-item">
+              <img src="./images/produtos/bolo-de-cenoura.png" alt="Bolo de Cenoura com Chocolate" loading="lazy">
+              <div class="product-item-content">
+                <h4>Bolo de Cenoura</h4>
+                <p>Fofinho e úmido, com uma generosa cobertura de chocolate.</p>
+                <div class="product-actions">
+                  <a href="pedidos.html" class="btn-comprar">Comprar</a>
+                  <a href="#" class="btn-info">Saiba Mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <img src="./images/produtos/bolo-de-fubá-com-goiabada.png" alt="Bolo de Fubá com Goiabada" loading="lazy">
+              <div class="product-item-content">
+                <h4>Bolo de Fubá com Goiabada</h4>
+                <p>Sabor de casa de vó, com a doçura da goiabada derretida.</p>
+                <div class="product-actions">
+                  <a href="pedidos.html" class="btn-comprar">Comprar</a>
+                  <a href="#" class="btn-info">Saiba Mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="content-tortas" class="tab-pane">
+            <div class="product-item">
+              <img src="./images/produtos/torta-de-limão.png" alt="Torta de Limão" loading="lazy">
+              <div class="product-item-content">
+                <h4>Torta de Limão</h4>
+                <p>Base crocante com recheio cremoso e cobertura de merengue.</p>
+                <div class="product-actions">
+                  <a href="pedidos.html" class="btn-comprar">Comprar</a>
+                  <a href="#" class="btn-info">Saiba Mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-item">
+              <img src="./images/produtos/torta-holandesa.png" alt="Torta Holandesa" loading="lazy">
+              <div class="product-item-content">
+                <h4>Torta Holandesa</h4>
+                <p>Irresistível combinação de biscoito, creme e chocolate.</p>
+                <div class="product-actions">
+                  <a href="pedidos.html" class="btn-comprar">Comprar</a>
+                  <a href="#" class="btn-info">Saiba Mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>Tabela de preços</h2>
+      <p>Confira a seguir nossa tabela com o preço dos produtos</p>
+     <table border="1">
+  <thead>
+    <tr>
+      <th>Categoria</th>
+      <th>Produto</th>
+      <th>Descrição</th>
+      <th>Preço (un.)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Categoria">Pães</td>
+      <td data-label="Produto">Pão Francês</td>
+      <td data-label="Descrição">Pão crocante por fora e macio por dentro.</td>
+      <td data-label="Preço (un.)">R$ 1,00</td>
+    </tr>
+    <tr>
+      <td data-label="Categoria">Pães</td>
+      <td data-label="Produto">Pão de milho</td>
+      <td data-label="Descrição">Feito com farinha de milho, tem sabor suave e levemente adocicado.</td>
+      <td data-label="Preço (un.)">R$ 2,00</td>
+    </tr>
+    <tr>
+      <td data-label="Categoria">Pães</td>
+      <td data-label="Produto">Pão de queijo</td>
+      <td data-label="Descrição">Tem casca crocante e miolo macio, com sabor intenso de queijo.</td>
+      <td data-label="Preço (un.)">R$ 3,00</td>
+    </tr>
+    <tr>
+      <td data-label="Categoria">Pães</td>
+      <td data-label="Produto">Pão de ciabatta</td>
+      <td data-label="Descrição">Com crosta crocante e miolo leve e aerado.</td>
+      <td data-label="Preço (un.)">R$ 4,00</td>
+    </tr>
+    <tr>
+      <td data-label="Categoria">Cafés e Bebidas</td>
+      <td data-label="Produto">Café Expresso</td>
+      <td data-label="Descrição">Intenso e aromático, preparado na hora.</td>
+      <td data-label="Preço (un.)">R$ 5,00</td>
+    </tr>
+    <tr>
+      <td data-label="Categoria">Cafés e Bebidas</td>
+      <td data-label="Produto">Cappuccino</td>
+      <td data-label="Descrição">Cremoso e equilibrado.</td>
+      <td data-label="Preço (un.)">R$ 6,00</td>
+    </tr>
+    <tr>
+      <td data-label="Categoria">Cafés e Bebidas</td>
+      <td data-label="Produto">Chocolate Quente</td>
+      <td data-label="Descrição">Cremoso e reconfortante.</td>
+      <td data-label="Preço (un.)">R$ 7,00</td>
+    </tr>
+    <tr>
+      <td data-label="Categoria">Cafés e Bebidas</td>
+      <td data-label="Produto">Suco Natural</td>
+      <td data-label="Descrição">Refrescante e leve. Feito com frutas frescas da estação</td>
+      <td data-label="Preço (un.)">R$ 8,00</td>
+    </tr>
+    <tr>
+      <td data-label="Categoria">Bolos Caseiros</td>
+      <td data-label="Produto">Bolo de Cenoura com Chocolate</td>
+      <td data-label="Descrição">Bolo de cenoura fofinho e úmido com cobertura de chocolate cremosa.</td>
+      <td data-label="Preço (un.)">R$ 9,00</td>
+    </tr>
+    <tr>
+      <td data-label="Categoria">Bolos Caseiros</td>
+      <td data-label="Produto">Bolo de Fubá com Goiabada</td>
+      <td data-label="Descrição">Bolo de fubá macio com o doce toque da goiabada derretida e sabor nostálgico.</td>
+      <td data-label="Preço (un.)">R$ 10,00</td>
+    </tr>
+    <tr>
+      <td data-label="Categoria">Tortas</td>
+      <td data-label="Produto">Torta de Limão</td>
+      <td data-label="Descrição">Base crocante, recheio cremoso de limão com cobertura de merengue dourado.</td>
+      <td data-label="Preço (un.)">R$ 11,00</td>
+    </tr>
+    <tr>
+      <td data-label="Categoria">Tortas</td>
+      <td data-label="Produto">Torta Holandesa</td>
+      <td data-label="Descrição">Uma combinação de biscoito amanteigado, creme de baunilha e cobertura de chocolate.</td>
+      <td data-label="Preço (un.)">R$ 12,00</td>
+    </tr>
+  </tbody>
+</table>
+
+    </section>
+    <section id="nossos-diferenciais" class="container">
+      <h2>Nossos diferenciais</h2>
+      <ul class="diferenciais-lista">
+        <li><strong>Ingredientes frescos e selecionados:</strong> Usamos apenas ingredientes de alta qualidade,
+          garantindo pães fresquinhos e saborosos todos os dias.</li>
+        <li><strong>Receitas tradicionais e caseiras:</strong> Mantemos o sabor autêntico das receitas passadas de
+          geração em geração, com um toque especial de amor e dedicação.</li>
+        <li><strong>Atendimento personalizado:</strong> Aqui, cada cliente é tratado como parte da nossa família.
+          Estamos sempre prontos para atender com carinho e atenção.</li>
+        <li><strong>Variedade de produtos:</strong> Além dos pães tradicionais, oferecemos uma seleção de bolos, tortas
+          e salgados feitos artesanalmente, para agradar todos os gostos.</li>
+        <li><strong>Opções saudáveis:</strong> Temos pães integrais, sem glúten e sem lactose, atendendo a diferentes
+          necessidades alimentares sem abrir mão do sabor.</li>
+        <li><strong>Ambiente acolhedor:</strong> Nosso espaço foi pensado para ser um lugar de encontro, onde você se
+          sente em casa, com um atendimento caloroso e ambiente familiar.</li>
+        <li><strong>Sustentabilidade:</strong> Priorizamos práticas sustentáveis, com a utilização de embalagens
+          ecológicas e o descarte responsável de resíduos.</li>
+        <li><strong>Inovação constante:</strong> Estamos sempre trazendo novidades no cardápio, com novos sabores e
+          produtos especiais, mantendo a tradição com um toque de criatividade.</li>
+      </ul>
+      <div class="image-overlay-container">
+        <picture>
+          <source media="(min-width: 900px)" srcset="./images/diferenciais/diferenciais-padaria-miribel.png">
+          <source media="(min-width: 600px)" srcset="./images/diferenciais/diferenciais-padaria-miribel.png">
+          <img src="./images/diferenciais/diferenciais-padaria-miribel.png" alt="Padaria Miribel" loading="lazy">
+        </picture>
+        <div class="image-overlay-text">
+          <h4>Qualidade e Tradição</h4>
+          <p>Os melhores ingredientes para o pão mais gostoso da cidade.</p>
+        </div>
+      </div>
+    </section>
+    <section id="depoimentos" class="container">
+      <h2>O que nossos clientes dizem</h2>
+      <div class="depoimentos-container">
+        <div class="depoimento-card">
+          <picture>
+            <source media="(min-width: 900px)" srcset="./images/clientes/cliente-1.jpg">
+            <source media="(min-width: 600px)" srcset="./images/clientes/cliente-1.jpg">
+            <img src="./images/clientes/cliente-1.jpg" alt="Foto da cliente Mariana" loading="lazy">
+          </picture>
+          <div class="depoimento-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <blockquote>"O pão de queijo é simplesmente divino! Quentinho e com aquele sabor autêntico de Minas. A Padaria
+            Miribel virou minha parada obrigatória."</blockquote>
+          <cite>— Mariana S.</cite>
+        </div>
+        <div class="depoimento-card">
+          <picture>
+            <source media="(min-width: 900px)" srcset="./images/clientes/cliente-2.jpg">
+            <source media="(min-width: 600px)" srcset="./images/clientes/cliente-2.jpg">
+            <img src="./images/clientes/cliente-2.jpg" alt="Foto do cliente Ricardo" loading="lazy">
+          </picture>
+          <div class="depoimento-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <blockquote>"O bolo de cenoura com chocolate é o melhor que já comi. A massa é fofinha e a cobertura, na
+            medida certa. Recomendo a todos!"</blockquote>
+          <cite>— Ricardo L.</cite>
+        </div>
+        <div class="depoimento-card">
+          <picture>
+            <source media="(min-width: 900px)" srcset="./images/clientes/cliente-3.jpg">
+            <source media="(min-width: 600px)" srcset="./images/clientes/cliente-3.jpg">
+            <img src="./images/clientes/cliente-3.jpg" alt="Foto da cliente Fernanda" loading="lazy">
+          </picture>
+          <div class="depoimento-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+          </div>
+          <blockquote>"Adoro o ambiente familiar e o atendimento. A gente se sente em casa. Sem falar no cappuccino, que
+            é cremoso e delicioso."</blockquote>
+          <cite>— Fernanda A.</cite>
+        </div>
+      </div>
+    </section>
+    <section id="galeria" class="container">
+      <h2>Nossa Vitrine de Delícias</h2>
+      <div class="galeria-container">
+        <div class="galeria-item">
+          <picture>
+            <source media="(min-width: 900px)" srcset="./images/produtos/pão-francês.png">
+            <source media="(min-width: 600px)" srcset="./images/produtos/pão-francês.png">
+            <img src="./images/produtos/pão-francês.png" alt="Pão Francês fresquinho" loading="lazy">
+          </picture>
+          <div class="galeria-overlay">
+            <span>Pão Francês</span>
+          </div>
+        </div>
+        <div class="galeria-item">
+          <picture>
+            <source media="(min-width: 900px)" srcset="./images/produtos/torta-de-limão.png">
+            <source media="(min-width: 600px)" srcset="./images/produtos/torta-de-limão.png">
+            <img src="./images/produtos/torta-de-limão.png" alt="Fatia de Torta de Limão" loading="lazy">
+          </picture>
+          <div class="galeria-overlay">
+            <span>Torta de Limão</span>
+          </div>
+        </div>
+        <div class="galeria-item">
+          <picture>
+            <source media="(min-width: 900px)" srcset="./images/produtos/bolo-de-cenoura.png">
+            <source media="(min-width: 600px)" srcset="./images/produtos/bolo-de-cenoura.png">
+            <img src="./images/produtos/bolo-de-cenoura.png" alt="Bolo de cenoura com chocolate" loading="lazy">
+          </picture>
+          <div class="galeria-overlay">
+            <span>Bolo de Cenoura</span>
+          </div>
+        </div>
+        <div class="galeria-item">
+          <picture>
+            <source media="(min-width: 900px)" srcset="./images/produtos/café-capuccino.png">
+            <source media="(min-width: 600px)" srcset="./images/produtos/café-capuccino.png">
+            <img src="./images/produtos/café-capuccino.png" alt="Xícara de Cappuccino" loading="lazy">
+          </picture>
+          <div class="galeria-overlay">
+            <span>Cappuccino</span>
+          </div>
+        </div>
+        <div class="galeria-item">
+          <picture>
+            <source media="(min-width: 900px)" srcset="./images/produtos/pão-de-queijo.png">
+            <source media="(min-width: 600px)" srcset="./images/produtos/pão-de-queijo.png">
+            <img src="./images/produtos/pão-de-queijo.png" alt="Pães de queijo" loading="lazy">
+          </picture>
+          <div class="galeria-overlay">
+            <span>Pão de Queijo</span>
+          </div>
+        </div>
+        <div class="galeria-item">
+          <picture>
+            <source media="(min-width: 900px)" srcset="./images/produtos/torta-holandesa.png">
+            <source media="(min-width: 600px)" srcset="./images/produtos/torta-holandesa.png">
+            <img src="./images/produtos/torta-holandesa.png" alt="Fatia de Torta Holandesa" loading="lazy">
+          </picture>
+          <div class="galeria-overlay">
+            <span>Torta Holandesa</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>Horários de funcionamento e Localização</h2>
+      <h3>Horários de funcionamento</h3>
+      <table border="2">
+        <thead>
+          <tr>
+            <th>Dia da Semana</th>
+            <th>Horário de Funcionamento</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Segunda a Sexta-feira</td>
+            <td>06h00 às 20h00</td>
+          </tr>
+          <tr>
+            <td>Sábado</td>
+            <td>06h00 às 18h00</td>
+          </tr>
+          <tr>
+            <td>Domingo</td>
+            <td>07h00 às 12h00</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Como chegar</h3>
+      <p>Estamos localizados na Rua Voluntários da Pátria, 235. Santana - SP</p>
+      <p><a
+          href="https://www.google.com/maps/place/Padaria+Miribel/@-23.6078902,-46.4665798,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce69d5b5fac62f:0x4a73419727b3886a!8m2!3d-23.6078902!4d-46.4640049!16s%2Fg%2F11rq8dv6jn?entry=ttu&g_ep=EgoyMDI1MDkyOS4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank">Ver no Google Maps</a></p>
+
+      <h3>Extras</h3>    
+      <p><a href="./sistema-pedidos.html" target="_blank">Fazer Pedido</a></p>
+      </p>
+      <p><a href="./delivery.html" target="_blank">Delivery</a>
+      </p>
+      <p><a href="./testes.html" target="_blank">Testes</a>
+      </p>
+      <p><a href="./loja.html" target="_blank">Loja</a>
+      </p>
+        </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h4>Sobre a Padaria Miribel</h4>
+        <p>Desde 1995, oferecendo tradição e sabor que aquecem o coração. Pães, doces e um ambiente familiar esperam por
+          você.</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Contato</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Rua Voluntários da Pátria, 235<br>Santana, São Paulo - SP</p>
+        <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+        <p><i class="fas fa-envelope"></i> contato@padariamiribel.com.br</p>
+      </div>
+      <div class="footer-links">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pedidos.html">Pedidos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Siga-nos</h4>
+        <div class="footer-social-icons">
+          <a href="#" aria-label="Facebook" data-tooltip="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="WhatsApp" data-tooltip="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Padaria Miribel&reg; - Todos os direitos reservados. Desenvolvido com carinho por Mayara Perillo.
+      </p>
+    </div>
+  </footer>
+
+  <div class="floating-buttons-container">
+    <a href="https://wa.me/551112345678" class="whatsapp-float" target="_blank" aria-label="Fale conosco pelo WhatsApp"
+      data-tooltip="Fale conosco pelo WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="#" id="btn-back-to-top" title="Voltar ao topo" data-tooltip="Voltar ao topo">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </div>
+
+  <div class="modal-overlay" id="product-modal-overlay">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 id="modal-product-name">#</h3>
+        <button class="close-modal" id="close-modal-button">&times;</button>
+      </div>
+      <div class="modal-content">
+        <img src="#" alt="Imagem do Produto" id="modal-product-image" loading="lazy">
+        <p id="modal-product-description"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/dados-padaria.js" defer></script>
+  <script src="js/calculadora-pedidos.js" defer></script>
+  <script src="js/formatadores-utilitarios.js" defer></script>
+  <script src="js/gerenciador-listas.js" defer></script>
+</body>
+
+</html>

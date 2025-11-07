@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="feedback - Padaria Miribel">
+    <meta name="keywords" content="feedback, padaria, Miribel">
+    <title>Feedback - Padaria Miribel</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-button-container">
+        <div class="baker-hat-icon">
+            <div class="hat-top"></div>
+            <div class="hat-base"></div>
+        </div>
+    </label>
+    <div class="overlay"></div>
+
+    <header id="cabecalho-principal">
+      <img src="./images/ambiente/entrada-padaria-miribel.png" alt="Entrada da Padaria Miribel com iluminação aconchegante" class="hero-background-image" fetchpriority="high">
+      <h1>Padaria Miribel</h1>
+      <img src="./images/logo/logo-padaria-miribel.png" alt="Logo da Padaria Miribel." width="190" height="190">
+      <h2>Tradição e sabor que aquecem o coração desde 1995</h2>
+    </header>
+    <nav class="menu">
+        <a href="./index.html" target="_parent">Home</a>  
+        <a href="contato.html" target="_parent">Contato</a>     
+        <a href="pedidos.html" target="_parent">Pedidos</a>    
+        <a href="feedback.html" target="_parent">Feedback</a>    
+        <a href="cadastro.html" target="_parent">Cadastro</a>
+    </nav>
+        <main>
+          <section class="container">
+            <h1>Dê seu feedback ⭐</h1>
+            <h3>Envie sua opinião e ajude a melhorar nossos serviços.</h3>
+            <form action="enviar-feedback" method="post">
+                <fieldset>
+                    <legend><strong>Seus dados</strong></legend>
+                    <div class="form-group">
+                        <label for="nome">Nome completo (opcional):</label>
+                        <input type="text" id="nome" name="nome completo" placeholder="Nome e Sobrenome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail (opcional):</label>
+                        <input type="email" id="email" name="email" placeholder="seu.email@gmail.com">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend><strong>Avaliação</strong></legend>
+                    <div class="form-group">
+                        <label for="produto-serviço">Produto/Serviço:</label>
+                        <select id="produto-serviço" name="produto/serviço" required>
+                          <option value="">Selecione uma opção</option>
+                          <option value="pães">Pães</option>
+                          <option value="bolos">Bolos</option>
+                          <option value="tortas">Tortas</option>
+                          <option value="cafés-e-bebidas">Cafés e bebidas</option>
+                          <option value="atendimento">Atendimento</option>
+                          <option value="ambiente">Ambiente</option>
+                          <option value="preços">Preços</option>            
+                        </select>
+                    </div>
+                    <p>Avaliação geral:</p>
+                    <input type="radio" id="excelente" name="avaliação-geral" value="Excelente" required>
+                    <label for="excelente">Excelente</label><br>
+                    <input type="radio" id="bom" name="avaliação-geral" value="Bom">
+                    <label for="bom">Bom</label><br>
+                    <input type="radio" id="regular" name="avaliação-geral" value="Regular">
+                    <label for="regular">Regular</label><br>
+                    <input type="radio" id="ruim" name="avaliação-geral" value="Ruim">
+                    <label for="ruim">Ruim</label><br><br>
+                    
+                    <div class="form-group">
+                        <label for="comentários">Comentários:</label>
+                        <textarea id="comentários" name="Comentários" maxlength="500"></textarea>
+                    </div>
+                    
+                    <label for="recomendaria-para-amigos">Recomendaria nossa padaria para seus amigos?</label><br>
+                    <input type="checkbox" id="recomendaria-para-amigos" name="recomendaria" value="Sim">
+                    <label for="recomendaria-para-amigos">Recomendaria</label><br><br>                                   
+
+                    <label for="autoriza-publicação-de-avaliação">Autoriza a publicação da sua avaliação?</label><br>
+                    <input type="checkbox" id="autoriza-publicação-de-avaliação" name="autoriza" value="Sim">
+                    <label for="autoriza-publicação-de-avaliação">Autorizo</label><br><br>
+                </fieldset>
+                <div class="form-actions">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <h4>Sobre a Padaria Miribel</h4>
+            <p>Desde 1995, oferecendo tradição e sabor que aquecem o coração. Pães, doces e um ambiente familiar esperam por você.</p>
+          </div>
+          <div class="footer-contact">
+            <h4>Contato</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Rua Voluntários da Pátria, 235<br>Santana, São Paulo - SP</p>
+            <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+            <p><i class="fas fa-envelope"></i> contato@padariamiribel.com.br</p>
+          </div>
+          <div class="footer-links">
+            <h4>Links Rápidos</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="pedidos.html">Pedidos</a></li>
+              <li><a href="contato.html">Contato</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h4>Siga-nos</h4>
+            <div class="footer-social-icons">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Padaria Miribel&reg; - Todos os direitos reservados. Desenvolvido com carinho por Mayara Perillo.</p>
+        </div>
+      </footer>
+
+      <div class="floating-buttons-container">
+        <a href="https://wa.me/551112345678" class="whatsapp-float" target="_blank" aria-label="Fale conosco pelo WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="#" id="btn-back-to-top" title="Voltar ao topo">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+
+      <div class="modal-overlay" id="product-modal-overlay">
+        <div class="modal-container">
+          <div class="modal-header">
+            <h3 id="modal-product-name"></h3>
+            <button class="close-modal" id="close-modal-button">&times;</button>
+          </div>
+          <div class="modal-content">
+            <img src="" alt="Imagem do Produto" id="modal-product-image">
+            <p id="modal-product-description"></p>
+          </div>
+        </div>
+      </div>
+    
+      <script src="js/main.js"></script>
+</body>
+</html>
